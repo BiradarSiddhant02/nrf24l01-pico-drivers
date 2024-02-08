@@ -67,7 +67,7 @@ void NRF24_modeTX(NRF24 *nrf24) {
     reg &= ~(1 << 0);
     NRF24_writeReg(nrf24, 0, reg);
 
-    NRF24_ceLow(nrf24); // Correction from video, thanks schuhmann.
+    NRF24_ceLow(nrf24);
 
     sleep_us(130);
 }
